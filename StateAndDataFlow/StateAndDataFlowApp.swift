@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct StateAndDataFlowApp: App {
-    let persistenceController = PersistenceController.shared
+    @StateObject private var userManager = UserManager()
+    //let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            StarterView()
+                .environmentObject(userManager)
+                //.environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

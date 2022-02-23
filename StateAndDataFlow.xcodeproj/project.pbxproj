@@ -13,6 +13,10 @@
 		7DF3FD4A27C4BC7F006DBBCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DF3FD4927C4BC7F006DBBCA /* Preview Assets.xcassets */; };
 		7DF3FD4C27C4BC7F006DBBCA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3FD4B27C4BC7F006DBBCA /* Persistence.swift */; };
 		7DF3FD4F27C4BC7F006DBBCA /* StateAndDataFlow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3FD4D27C4BC7F006DBBCA /* StateAndDataFlow.xcdatamodeld */; };
+		7DF3FD5627C4C0F5006DBBCA /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3FD5527C4C0F5006DBBCA /* TimeCounter.swift */; };
+		7DF3FD5827C4CBE1006DBBCA /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3FD5727C4CBE1006DBBCA /* RegisterView.swift */; };
+		7DF3FD5A27C4CD41006DBBCA /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3FD5927C4CD41006DBBCA /* UserManager.swift */; };
+		7DF3FD5C27C4CEEF006DBBCA /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3FD5B27C4CEEF006DBBCA /* StarterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		7DF3FD4927C4BC7F006DBBCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7DF3FD4B27C4BC7F006DBBCA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		7DF3FD4E27C4BC7F006DBBCA /* StateAndDataFlow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StateAndDataFlow.xcdatamodel; sourceTree = "<group>"; };
+		7DF3FD5527C4C0F5006DBBCA /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
+		7DF3FD5727C4CBE1006DBBCA /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		7DF3FD5927C4CD41006DBBCA /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		7DF3FD5B27C4CEEF006DBBCA /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +64,15 @@
 			isa = PBXGroup;
 			children = (
 				7DF3FD4227C4BC7D006DBBCA /* StateAndDataFlowApp.swift */,
+				7DF3FD5527C4C0F5006DBBCA /* TimeCounter.swift */,
+				7DF3FD5727C4CBE1006DBBCA /* RegisterView.swift */,
+				7DF3FD5927C4CD41006DBBCA /* UserManager.swift */,
 				7DF3FD4427C4BC7E006DBBCA /* ContentView.swift */,
 				7DF3FD4627C4BC7F006DBBCA /* Assets.xcassets */,
 				7DF3FD4B27C4BC7F006DBBCA /* Persistence.swift */,
 				7DF3FD4D27C4BC7F006DBBCA /* StateAndDataFlow.xcdatamodeld */,
 				7DF3FD4827C4BC7F006DBBCA /* Preview Content */,
+				7DF3FD5B27C4CEEF006DBBCA /* StarterView.swift */,
 			);
 			path = StateAndDataFlow;
 			sourceTree = "<group>";
@@ -145,7 +157,11 @@
 			files = (
 				7DF3FD4C27C4BC7F006DBBCA /* Persistence.swift in Sources */,
 				7DF3FD4527C4BC7E006DBBCA /* ContentView.swift in Sources */,
+				7DF3FD5A27C4CD41006DBBCA /* UserManager.swift in Sources */,
 				7DF3FD4327C4BC7E006DBBCA /* StateAndDataFlowApp.swift in Sources */,
+				7DF3FD5C27C4CEEF006DBBCA /* StarterView.swift in Sources */,
+				7DF3FD5827C4CBE1006DBBCA /* RegisterView.swift in Sources */,
+				7DF3FD5627C4C0F5006DBBCA /* TimeCounter.swift in Sources */,
 				7DF3FD4F27C4BC7F006DBBCA /* StateAndDataFlow.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
