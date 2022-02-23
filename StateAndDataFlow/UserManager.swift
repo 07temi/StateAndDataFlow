@@ -21,4 +21,3 @@ class UserManager: ObservableObject {
         UserDefaults.standard.removeObject(forKey: "userName")
     }
 }
-

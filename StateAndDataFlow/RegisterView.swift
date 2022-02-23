@@ -22,6 +22,8 @@ struct RegisterView: View {
                     .onChange(of: name, perform: { newValue in
                         if validateName() {
                             color = .green
+                        } else {
+                            color = .red
                         }
                     })
                     .foregroundColor(color)
@@ -55,6 +57,10 @@ extension RegisterView {
         }
     }
 }
+
+//Чтобы расширить ФЛК по вводимому имени
+//Привязал к результату функции и другие логические свойства
+//вроде не сильно нагородил))
 
 extension RegisterView {
     private func validateName() -> Bool {
