@@ -20,7 +20,7 @@ struct RegisterView: View {
                     .multilineTextAlignment(.center)
                 Text("\(name.count)")
                     .onChange(of: name, perform: { newValue in
-                        if name.count >= 3 {
+                        if validateName() {
                             color = .green
                         }
                     })
@@ -33,7 +33,8 @@ struct RegisterView: View {
                     Image(systemName: "checkmark.circle")
                     Text("Ok")
                 }
-                .alert("ERROR", isPresented: $showAlert) {
+                .disabled(!validateName())
+                .alert("Error", isPresented: $showAlert) {
                     Button("Ok", action: {} )
                 } message: {
                     Text("Invalid user name")
@@ -46,11 +47,20 @@ struct RegisterView: View {
 extension RegisterView {
     private func registerUser() {
         
-        if name.count >= 3 {
+        if validateName() {
             UserDefaults.standard.set(true, forKey: "isRegister")
             UserDefaults.standard.set(name, forKey: "userName")
         } else {
-            showAlert.toggle()
+            showAlert = !validateName()
         }
+    }
+}
+
+extension RegisterView {
+    private func validateName() -> Bool {
+        if name.count >= 3 {
+            return true
+        }
+        return false
     }
 }
